@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Table Example</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f4b400;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #d3e0ea;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Student Information Table</h2>
+
+  <table>
+    <tr>
+      <th rowspan="2">ID</th>
+      <th rowspan="2">Name</th>
+      <th colspan="2">Academic</th>
+      <th rowspan="2">Department</th>
+    </tr>
+    <tr>
+      <th>HSC</th>
+      <th>SSC</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Diya Moni</td>
+      <td>2020</td>
+      <td>2017</td>
+      <td>CSE</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Rafi</td>
+      <td>2019</td>
+      <td>2016</td>
+      <td>EEE</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td colspan="2">Tania Akter</td>
+      <td>2018</td>
+      <td>BBA</td>
+    </tr>
+  </table>
+
+</body>
+</html>
