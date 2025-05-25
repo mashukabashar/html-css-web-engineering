@@ -1,72 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HTML Table Example</title>
-  <style>
-    table {
-      width: 80%;
-      border-collapse: collapse;
-      margin: 20px auto;
-      font-family: Arial, sans-serif;
-    }
-
-    th, td {
-      border: 1px solid #999;
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #f4b400;
-      color: white;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    tr:hover {
-      background-color: #d3e0ea;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Event Management System</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h2 style="text-align:center;">Student Information Table</h2>
+  <div class="hero">
+    <nav class="navbar">
+      <h2>EventEase</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  <table>
-    <tr>
-      <th rowspan="2">ID</th>
-      <th rowspan="2">Name</th>
-      <th colspan="2">Academic</th>
-      <th rowspan="2">Department</th>
-    </tr>
-    <tr>
-      <th>HSC</th>
-      <th>SSC</th>
-    </tr>
-    <tr>
-      <td>101</td>
-      <td>Diya Moni</td>
-      <td>2020</td>
-      <td>2017</td>
-      <td>CSE</td>
-    </tr>
-    <tr>
-      <td>102</td>
-      <td>Rafi</td>
-      <td>2019</td>
-      <td>2016</td>
-      <td>EEE</td>
-    </tr>
-    <tr>
-      <td>103</td>
-      <td colspan="2">Tania Akter</td>
-      <td>2018</td>
-      <td>BBA</td>
-    </tr>
-  </table>
+  <section class="gallery">
+    <h3>Our Events</h3>
+    <div class="image-row">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Event 1">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=400&q=80" alt="Event 2">
+      <img src="pngtree-new-event-management-outdoor-background-image_15957681.jpg" alt="Event 3">
+      <img src="vibrant-colors-blend-together-and-swirl-into-a-mystical-haze-as-the-ceremony-progresses-photo.jpg" alt="Event 4">
+      <img src="istockphoto-1499313701-612x612.jpg" alt="Event 5">
+
+    </div>
+  </section>
+
+  <section class="schedule">
+    <h3>Upcoming Event Schedule</h3>
+    <table>
+      <tr>
+        <th rowspan="2">Date</th>
+        <th colspan="2">Morning Session</th>
+        <th colspan="2">Evening Session</th>
+      </tr>
+      <tr>
+        <th>Event</th>
+        <th>Speaker</th>
+        <th>Event</th>
+        <th>Performer</th>
+      </tr>
+      <tr>
+        <td>12 July</td>
+        <td>Workshop on Leadership</td>
+        <td>Dr. Ahsan</td>
+        <td>Music Night</td>
+        <td>Band Fusion</td>
+      </tr>
+      <tr>
+        <td>13 July</td>
+        <td>Startup Talk</td>
+        <td>Ms. Sara</td>
+        <td>Drama Show</td>
+        <td>Stage Crew</td>
+      </tr>
+    </table>
+  </section>
 
 </body>
 </html>
